@@ -1,6 +1,6 @@
 cryptography==2.8
 Flask==1.1.1
-gunicorn==19.9.0c;rar
+gunicorn==19.9.0c
 Jinja2==2.11.1
 json5==0.9.1
 MarkupSafe==1.1.1
