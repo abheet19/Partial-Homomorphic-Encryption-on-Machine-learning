@@ -24,14 +24,3 @@ def serializeDataCompany():
 	encrypted_data['values'] = (str(results.ciphertext()), results.exponent)
 	serialized = json.dumps(encrypted_data)
 	return serialized
-
-#print(sum([data[i]*mycoef[i] for i in range(len(data))]))
-
-def main():
-	datafileCompany=serializeDataCompany()
-	with open('answer.json', 'w') as file:
-		json.dump(datafileCompany, file)
-
-if __name__=='__main__':
-	main()
-
