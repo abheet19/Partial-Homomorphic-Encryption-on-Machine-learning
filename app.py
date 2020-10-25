@@ -44,6 +44,7 @@ def result():
     answer_file=loadAnswer()
     answer_key=paillier.PaillierPublicKey(n=int(answer_file['pubkey']['n']))
     answer = paillier.EncryptedNumber(answer_key, int(answer_file['values'][0]), int(answer_file['values'][1]))
+    pub_key, priv_key = getKeys()
     if (answer_key==pub_key):
         final_result=priv_key.decrypt(answer)
  	
