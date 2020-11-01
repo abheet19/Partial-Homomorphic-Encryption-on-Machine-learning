@@ -17,9 +17,9 @@
 <h3 class="contributors"> Made with &#128151 by -> <br> <br>
 
     Abheet Singh Isher <br>
-    Ishan Marjara     <br>
-    Priyanshu Rawat   <br>
-    Dhwani Malviya <br>
+    Ishaan Marjara     <br>
+    Priyanshu Singh   <br>
+    Dhwani Malaviya <br>
 </h3>
  
  
@@ -28,10 +28,10 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('customerEncryption')}}"method="post">
-    	<input type="text" name="Age" placeholder="Age" required="required" />
-        <input type="text" name="Healthy Eating" placeholder="Healthy Eating" required="required" />
-		<input type="text" name="Active lifestyle" placeholder="Active lifestyle" required="required" />
-        <input type="text" name="Gender" placeholder="Gender" required="required" />
+    	<input type="text" name="Age" placeholder="Enter your Age" required="required" />
+        <input type="text" name="Healthy Eating" placeholder="Healthy Eating (On a scale of 1 to 10)" required="required" />
+		<input type="text" name="Active lifestyle" placeholder="Active lifestyle (On a scale of 1 to 10)" required="required" />
+        <input type="text" name="Gender" placeholder="Gender (0:Male,1:Female)" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
