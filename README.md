@@ -43,11 +43,15 @@ def result():                #generates the final output on the client side
 
 ```
 
+## Final thoughts
+* This is a high level glimpse to the future of ML and cryptography but not yet production ready.
+* Partial Homomorphic Encryption is a great way to perform complex ML computations on  encrypted sample
+* Evolving space with Fully-Homomorphic encryption which is in research  right now
+* This will likely be demand in the next 5-7 years.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Thanks for reading this and if you like this content please give a **LIKE** to this repository.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
