@@ -112,5 +112,4 @@ def result():
     return render_template('result.html', final_result=final_result)
 
 if __name__ == "__main__":
-    # Run the Flask app with debug mode disabled for production
-    app.run(debug=False)
+    app.run(debug=False, host='0.0.0.0', port=8080)

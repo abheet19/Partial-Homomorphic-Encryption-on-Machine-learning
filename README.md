@@ -67,7 +67,7 @@ serializeDataCompany()
 
 7. **Access the Application**
    
-   Open your web browser and navigate to `http://localhost:5000/` to interact with the application.
+   Open your web browser and navigate to `http://localhost:8080/` to interact with the application.
 
 ## Usage
 
