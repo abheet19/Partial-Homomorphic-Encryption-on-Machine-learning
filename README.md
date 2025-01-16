@@ -22,32 +22,72 @@ serializeDataCompany()
 ``` 
 ![Architecture](./architecture.png)
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the prerequisites.
+### How to Run Locally
 
-```bash
-pip install -r requirements.txt
-```
+1. **Clone the Repository**
+   
+   ```bash
+   git clone https://github.com/yourusername/Partial-Homomorphic-Encryption-on-Machine-learning.git
+   cd Partial-Homomorphic-Encryption-on-Machine-learning
+   ```
+
+2. **Set Up a Conda Environment**
+   
+   ```bash
+   conda create -n phe_ml_env python=3.8
+   conda activate phe_ml_env
+   ```
+
+3. **Install Dependencies**
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Train the Machine Learning Model**
+   
+   Before running the application, train the model to generate the `improved_model.pkl` file.
+   
+   ```bash
+   python train.py
+   ```
+
+5. **Generate Encryption Keys**
+   
+   ```python
+   # ...existing code...
+   python cust.py
+   ```
+
+6. **Start the Flask Application**
+   
+   ```bash
+   python app.py
+   ```
+
+7. **Access the Application**
+   
+   Open your web browser and navigate to `http://localhost:5000/` to interact with the application.
 
 ## Usage
 
-The main app.py (flask file) contains the code for implementing all the above functions
+The main `app.py` (Flask file) contains the code for implementing all the above functions
 ```bash
-@app.route('/customerEncryption',methods=['GET','POST']) 
-def customerEncryption():    #handles the encryption on client side
+@app.route('/customerEncryption', methods=['GET','POST']) 
+def customerEncryption():    # Handles the encryption on client side
 
-@app.route('/company',methods=['GET','POST'])
-def company():               #handles the encryption on client side
+@app.route('/company', methods=['GET','POST'])
+def company():               # Handles the encryption on company side
 
-@app.route('/result',methods=['GET','POST'])
-def result():                #generates the final output on the client side
-
+@app.route('/result', methods=['GET','POST'])
+def result():                # Generates the final output on the client side
 ```
 
-## Final thoughts
-* This is a high level glimpse to the future of ML and cryptography but not yet production ready.
-* Partial Homomorphic Encryption is a great way to perform complex ML computations on  encrypted sample
-* Evolving space with Fully-Homomorphic encryption which is in research  right now
-* This will likely be demand in the next 5-7 years.
+## Final Thoughts
+* This is a high-level glimpse into the future of ML and cryptography but not yet production-ready.
+* Partial Homomorphic Encryption is a great way to perform complex ML computations on encrypted samples.
+* Evolving space with Fully-Homomorphic Encryption which is in research right now.
+* This will likely be in demand in the next 5-7 years.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

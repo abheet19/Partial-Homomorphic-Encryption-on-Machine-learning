@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
   <meta charset="UTF-8">
   <title>Homomorphic Encryption</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  
 </head>
 
 <body>
- <div class="login">
-	<h1>Customer Encryption details</h1>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header text-center">
+        <h1>Customer Encryption Details</h1>
+      </div>
+      <div class="card-body">
+        <!-- Display Public Key -->
+        <h5 class="card-title">Public Key:</h5>
+        <pre class="form-control form-control-sm">{{ keys.public_key }}</pre>
+        <!-- Display Private Key -->
+        <h5 class="card-title">Private Key:</h5>
+        <pre class="form-control form-control-sm">{{ keys.private_key }}</pre>
+        <!-- Form to submit encrypted data to the company -->
+        <form action="{{ url_for('company') }}" method="post" class="mt-4">
+          <div class="form-check d-flex justify-content-center">
+            <input class="form-check-input" type="checkbox" value="" id="submitData" required>
+            <label class="form-check-label" for="submitData">
+              Do you want to submit your encrypted data to the company for Salary Prediction?
+            </label>
+          </div>
+          <div class="text-center">
+            <!-- Submit Button to send encrypted data -->
+            <button type="submit" class="btn btn-primary mt-3 btn-sm">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <br>
-    
-    <div>
-    {{ keys }}
-    <div/>
-    <br>
-    <form action="{{ url_for('company')}}"method="post">
-        <div> Do you want to submit your encrypted data to the company for Salary Prediction </div>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
-    </form>
-
-   <br>
- </div>
-
-
+  <!-- Bootstrap 5 JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
