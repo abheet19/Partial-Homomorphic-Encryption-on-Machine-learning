@@ -1,3 +1,36 @@
+# ShieldAI: Privacy-Preserving Machine Learning with Homomorphic Encryption
+
+**[➡️ Live Demo Link](https://partial-homomorphic-encryption-156469903131.europe-west1.run.app/)**
+
+ShieldAI is a web-based system that demonstrates privacy-preserving machine learning. It performs ML inference (Classification and Regression) on encrypted data using Partial Homomorphic Encryption (PHE). This allows for data analysis without ever exposing the raw, confidential data, ensuring the highest level of security and compliance.
+
+---
+
+### The Problem It Solves
+Industries like finance, healthcare, and insurance need to analyze highly sensitive customer data to build predictive models. However, privacy regulations (like GDPR and HIPAA) and the risk of data breaches make it dangerous to process this data in its raw form. ShieldAI provides a solution by allowing ML models to make predictions on data while it remains fully encrypted.
+
+---
+
+### Key Features
+- **Secure ML Inference:** Implements the Paillier cryptosystem, a form of Partial Homomorphic Encryption, which allows for mathematical operations (like addition and multiplication by a constant) to be performed on encrypted data.
+- **Privacy-Preserving Pipeline:** Developed a complete, secure pipeline where a user can submit encrypted data and receive an encrypted prediction, which only they can decrypt.
+- **Classification & Regression:** Supports both major types of supervised learning tasks, demonstrating broad applicability for various business use cases.
+- **Cloud-Native Deployment:** Fully containerized with Docker and deployed on Google Cloud Run, showcasing a secure and scalable cloud architecture.
+- **Automated CI/CD:** Features a robust CI/CD pipeline using GitHub Actions to automate the build and deployment process, enhancing reliability and security.
+
+---
+
+### Tech Stack
+
+| Category              | Technologies                                                                          |
+| --------------------- | ------------------------------------------------------------------------------------- |
+| **ML & Security** | Python, Scikit-learn, Paillier Homomorphic Encryption Library, Pandas                 |
+| **Backend** | Flask, JavaScript                                                                     |
+| **Frontend** | Bootstrap, HTML/CSS                                                                   |
+| **Cloud & DevOps** | Google Cloud Run, Google Container Registry, Docker, CI/CD with GitHub Actions, IaC   |
+
+---
+
 # Homomorphic Encryption
 Homomorphic encryption is a form of encryption that permits users to perform computations on its encrypted data without first decrypting it. These resulting computations are left in an encrypted form which, when decrypted, result in an identical output to that produced had the operations been performed on the unencrypted data. Homomorphic encryption can be used for privacy-preserving outsourced storage and computation. This allows data to be encrypted and out-sourced to commercial cloud environments for processing, all while encrypted.
 
