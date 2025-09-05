@@ -7,7 +7,7 @@ ShieldAI is a web-based system that demonstrates privacy-preserving machine lear
 ---
 
 ### Screenshots
-![ShieldAI](https://github.com/abheet19/ShieldAI/issues/1#issue-3388537644)
+![ShieldAI](<img width="550" height="455" alt="Image" src="https://github.com/user-attachments/assets/16c5e422-85de-44f5-9389-88a9e61d906c" />)
 
 ---
 
