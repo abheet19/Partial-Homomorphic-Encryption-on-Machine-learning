@@ -6,6 +6,11 @@ ShieldAI is a web-based system that demonstrates privacy-preserving machine lear
 
 ---
 
+### Screenshots
+![ShieldAI](https://github.com/abheet19/ShieldAI/issues/1#issue-3388537644)
+
+---
+
 ### The Problem It Solves
 Industries like finance, healthcare, and insurance need to analyze highly sensitive customer data to build predictive models. However, privacy regulations (like GDPR and HIPAA) and the risk of data breaches make it dangerous to process this data in its raw form. ShieldAI provides a solution by allowing ML models to make predictions on data while it remains fully encrypted.
 
